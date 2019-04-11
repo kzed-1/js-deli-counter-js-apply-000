@@ -24,5 +24,12 @@ function currentLine(lineNumber){
     }  
   }return line + `${lineNumber.length}. ${lineNumber.splice(-1)}`;
 }
+var line = [];
+var counter = 0;
+function takeANumber(){
+    counter = counter + 1;
+    line.push(counter);
+    return `Welcome, you have ticket number, ${counter}, you are ${line.length} in line.`
+}
 
 
